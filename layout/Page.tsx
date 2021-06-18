@@ -21,19 +21,30 @@ export function Page({ children, ...props }) {
             padding: 1rem;
             text-align: center;
             border: 1px solid black;
+            align-items: center;
 
             h1 {
               flex-grow: 1;
               text-align: left;
+              font-family: 'Texturina', serif;
+
+              a {
+                border: 5px solid black;
+                color: black;
+                padding: 0.5rem 1rem;
+                margin-top: -0.5rem;
+                border-radius: 0.2rem;
+              }
             }
 
             a {
               padding: 1rem;
+              color: black;
             }
           `}
         >
           <h1>
-            <a href="/">Sharktooth</a>
+            <a href="/">sharktooth</a>
           </h1>
           <a href="/hospitality">hospitality</a>
           <a href="/services">services</a>
@@ -67,6 +78,8 @@ export function Page({ children, ...props }) {
         </footer>
       </div>
       <style jsx global>{`
+        @import url('https://fonts.googleapis.com/css2?family=Texturina:wght@600&display=swap');
+
         html,
         body {
           padding: 0;
@@ -78,6 +91,10 @@ export function Page({ children, ...props }) {
 
         * {
           box-sizing: border-box;
+        }
+
+        a {
+          text-decoration: none;
         }
       `}</style>
     </>
